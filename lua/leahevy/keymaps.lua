@@ -39,6 +39,19 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
+-- Fix movements for wrapped lines
+keymap("n", "j", "gj", opts)
+keymap("n", "k", "gk", opts)
+keymap("n", "0", "g0", opts)
+keymap("n", "$", "g$", opts)
+keymap("x", "j", "gj", opts)
+keymap("x", "k", "gk", opts)
+keymap("x", "0", "g0", opts)
+keymap("x", "$", "g$", opts)
+
+-- Key Y as yy
+keymap("n", "Y", "yy", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
