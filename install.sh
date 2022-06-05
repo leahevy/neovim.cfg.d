@@ -16,3 +16,4 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 pip install pynvim
+pip install pyright
