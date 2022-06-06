@@ -17,6 +17,12 @@ vim.cmd [[
     autocmd!
     autocmd FileType markdown setlocal wrap
     autocmd FileType markdown setlocal spell
+    autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+  augroup end
+
+  augroup _json
+    autocmd!
+    autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
   augroup end
 
   augroup _auto_resize

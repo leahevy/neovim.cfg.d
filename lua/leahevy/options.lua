@@ -7,6 +7,14 @@ local options = {
   fileencoding = "utf-8",                  -- the encoding written to a file
   hlsearch = true,                         -- highlight all matches on previous search pattern
   ignorecase = true,                       -- ignore case in search patterns
+  gdefault = true,
+  binary = true,
+  eol = false,
+  modeline = true,
+  modelines = 4,
+  incsearch = true,
+  errorbells = false,
+  startofline = false,
   mouse = "a",                             -- allow the mouse to be used in neovim
   pumheight = 10,                          -- pop up menu height
   showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
@@ -43,4 +51,5 @@ end
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
-vim.cmd "set list listchars=tab:>-,space:·"
+vim.cmd [[set list listchars=space:·,tab:▸\ ,trail:·,eol:¬,nbsp:_]]
+vim.cmd [[set fillchars+=eob:\ ]]

@@ -1,7 +1,9 @@
-local status_ok, which_key = pcall(require, "which-key")
+local status_ok, which_key_local = pcall(require, "which-key")
 if not status_ok then
   return
 end
+
+which_key = which_key_local
 
 local setup = {
   plugins = {
@@ -69,7 +71,7 @@ local setup = {
   },
 }
 
-local opts = {
+whichkey_opts = {
   mode = "n", -- NORMAL mode
   prefix = "<leader>",
   buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
@@ -85,6 +87,7 @@ local mappings = {
     "Buffers",
   },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
+  ["n"] = { "<cmd>Neoformat<cr>", "Format file" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>q!<CR>", "Quit" },
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
@@ -184,4 +187,7 @@ local mappings = {
 }
 
 which_key.setup(setup)
-which_key.register(mappings, opts)
+which_key.register(mappings, whichkey_opts)
+
+require "leahevy.whichkey.python"
+require "leahevy.whichkey.rasa"
