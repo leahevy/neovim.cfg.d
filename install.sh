@@ -18,5 +18,6 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     brew install tmux
 fi
 
+pip install --upgrade pip
 pip install pynvim
 pip install pyright
