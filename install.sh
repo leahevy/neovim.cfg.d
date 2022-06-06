@@ -46,6 +46,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt-get -yq install fortune
     # TODO: install dotnet
     sudo apt-get -yq install golang-go
+    sudo apt-get -yq install lldb
+    sudo apt-get -yq install bashdb
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     brew install neovim
     brew install ripgrep
@@ -58,6 +60,8 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     brew install golang
     brew install lazygit
     brew install fortune
+    lldb --version
+    brew install bashdb
 fi
 
 pip install --upgrade pip
