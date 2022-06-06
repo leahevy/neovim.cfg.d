@@ -1,26 +1,13 @@
-require "leahevy.init"
-require "leahevy.utils"
-require "leahevy.options"
-require "leahevy.keymaps"
-require "leahevy.plugins"
-require "leahevy.colorscheme"
-require "leahevy.cmp"
-require "leahevy.lsp"
-require "leahevy.telescope"
-require "leahevy.treesitter"
-require "leahevy.autopairs"
-require "leahevy.comment"
-require "leahevy.gitsigns"
-require "leahevy.nvim-tree"
-require "leahevy.bufferline"
-require "leahevy.toggleterm"
-require "leahevy.project"
-require "leahevy.impatient"
-require "leahevy.indentline"
-require "leahevy.alpha"
-require "leahevy.whichkey"
-require "leahevy.colorizer"
-require "leahevy.feline"
-require "leahevy.functions"
-require "leahevy.transparency"
-require "leahevy.autocommands"
+-- Load all modules from lua/leahevy directory in order
+local i, popen = 0, io.popen
+local pfile = popen('ls -a ~/.config/nvim/lua/leahevy')
+if pfile ~= nil then
+	for filename in pfile:lines() do
+	    i = i + 1
+		if filename:find("^[.]") == nil then
+			local modulename = "leahevy." .. string.gsub(filename, ".lua", "")
+			require(modulename)
+		end
+	end
+	pfile:close()
+end
