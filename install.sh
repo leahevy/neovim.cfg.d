@@ -71,5 +71,6 @@ if [[ ! -d "$(pyenv root)/plugins/pyenv-pyright" ]]; then
     git clone "https://github.com/alefpereira/pyenv-pyright.git" "$(pyenv root)/plugins/pyenv-pyright"
 fi
 
-npm install neovim
-npm install remark
+npm install -g neovim
+npm install -g remark
+npm install -g remark-gfm
