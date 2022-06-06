@@ -15,6 +15,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt-get -yq install tmux
     sudo apt-get -yq install llvm
     sudo apt-get -yq install cmake
+    sudo apt-get -yq install lazygit
     # TODO: install dotnet
     sudo apt-get -yq install golang-go
 elif [[ "$OSTYPE" == "darwin"* ]]; then
@@ -26,6 +27,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     brew install cmake
     brew install --cask dotnet-sdk
     brew install golang
+    brew install lazygit
 fi
 
 pip install --upgrade pip
