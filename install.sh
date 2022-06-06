@@ -11,11 +11,19 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt-get -yq install xsel
     sudo apt-get -yq install ncdu htop
     sudo apt-get -yq install tmux
+    sudo apt-get -yq install llvm
+    sudo apt-get -yq install cmake
+    # TODO: install dotnet
+    sudo apt-get -yq install golang-go
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     brew install ripgrep
     brew install fd
     brew install ncdu htop
     brew install tmux
+    brew install llvm
+    brew install cmake
+    brew install --cask dotnet-sdk
+    brew install golang
 fi
 
 pip install --upgrade pip

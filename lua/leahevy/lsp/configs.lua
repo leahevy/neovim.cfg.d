@@ -5,7 +5,7 @@ end
 
 local lspconfig = require("lspconfig")
 
-local servers = { 'remark_ls', 'solc', 'sorbet', 'sqlls', 'tsserver', 'ansiblels', 'graphql', 'cmake', 'bashls', 'dockerls', 'elixirls', 'kotlin_language_server', 'sumneko_lua', 'purescriptls', 'rust_analyzer', 'texlab', 'vimls', 'html', 'angularls', 'jsonls', 'pyright', 'clangd', 'cssls', 'opencl_ls', 'puppet', 'quick_lint_js' }
+local servers = { 'remark_ls', 'solc', 'sorbet', 'sqlls', 'tsserver', 'ansiblels', 'graphql', 'cmake', 'bashls', 'dockerls', 'elixirls', 'kotlin_language_server', 'sumneko_lua', 'purescriptls', 'rust_analyzer', 'texlab', 'vimls', 'html', 'angularls', 'jsonls', 'pyright', 'ccls', 'cssls', 'opencl_ls', 'puppet', 'quick_lint_js', 'csharp_ls', 'gopls' }
 
 lsp_installer.setup {
 	ensure_installed = servers
