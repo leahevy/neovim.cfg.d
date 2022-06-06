@@ -21,3 +21,9 @@ fi
 pip install --upgrade pip
 pip install pynvim
 pip install pyright
+
+if command -v pyenv &> /dev/null; then
+    if [[ ! -d "$(pyenv root)/plugins/pyenv-pyright" ]]; then
+        git clone "https://github.com/alefpereira/pyenv-pyright.git" "$(pyenv root)/plugins/pyenv-pyright"
+    fi
+fi
