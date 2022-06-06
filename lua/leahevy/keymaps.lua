@@ -51,8 +51,8 @@ keymap("x", "$", "g$", opts)
 
 -- Semicolon
 vim.cmd [[
-    nmap ; :
-    noremap ;; ;
+    noremap ; :
+    noremap : ;
 ]]
 
 -- Key Y as yy
