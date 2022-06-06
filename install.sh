@@ -5,11 +5,12 @@ if [[ ! -e "$HOME/.config/nvim" ]]; then
 fi
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    sudo apt install ripgrep
-    sudo apt install fd-find
-    sudo apt install xsel
-    sudo apt install ncdu htop
-    sudo apt install tmux
+    export DEBIAN_FRONTEND=noninteractive
+    sudo apt-get -yq install ripgrep
+    sudo apt-get -yq install fd-find
+    sudo apt-get -yq install xsel
+    sudo apt-get -yq install ncdu htop
+    sudo apt-get -yq install tmux
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     brew install ripgrep
     brew install fd
