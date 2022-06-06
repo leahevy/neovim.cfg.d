@@ -6,12 +6,15 @@ function _G.ReloadConfig()
     end
   end
 
+  vim.cmd "unmap <Space>"
   vim.cmd "source $MYVIMRC"
+  vim.cmd "PackerSync"
 end
 
-vim.cmd [[
-  augroup user_config
-    autocmd!
-    autocmd BufWritePost *-*.lua lua ReloadConfig()
-  augroup end
-]]
+-- TODO: leader key does not work after reloading config
+---- vim.cmd [[
+----   augroup user_config
+----     autocmd!
+----     autocmd BufWritePost *-*.lua lua ReloadConfig()
+----   augroup end
+---- ]]
