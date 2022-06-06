@@ -36,4 +36,5 @@ if command -v pyenv &> /dev/null; then
     fi
 fi
 
+npm install neovim
 npm install remark
