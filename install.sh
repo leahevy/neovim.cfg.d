@@ -35,3 +35,5 @@ if command -v pyenv &> /dev/null; then
         git clone "https://github.com/alefpereira/pyenv-pyright.git" "$(pyenv root)/plugins/pyenv-pyright"
     fi
 fi
+
+npm install remark

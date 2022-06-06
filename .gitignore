@@ -45,3 +45,5 @@ luac.out
 # Nvim
 /plugin
 /fonts
+/node_modules
+/package*.json
