@@ -5,7 +5,7 @@ match Whitespace / /
 match EOL /\n/
 
 try
-  colorscheme ghdark
+  colorscheme mytheme
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark
