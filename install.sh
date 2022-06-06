@@ -9,10 +9,12 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt install fd-find
     sudo apt install xsel
     sudo apt install ncdu htop
+    sudo apt install tmux
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     brew install ripgrep
     brew install fd
     brew install ncdu htop
+    brew install tmux
 fi
 
 pip install pynvim
