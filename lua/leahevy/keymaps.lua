@@ -49,6 +49,12 @@ keymap("x", "k", "gk", opts)
 keymap("x", "0", "g0", opts)
 keymap("x", "$", "g$", opts)
 
+-- Semicolon
+vim.cmd [[
+    nmap ; :
+    noremap ;; ;
+]]
+
 -- Key Y as yy
 keymap("n", "Y", "yy", opts)
 
