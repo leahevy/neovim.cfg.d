@@ -1,4 +1,6 @@
 #!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
 
 if [[ ! -e "$HOME/.config/nvim" ]]; then
     ln -s "$(pwd)" "$HOME/.config/nvim"
