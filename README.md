@@ -1,4 +1,7 @@
-## My Neovim config
+<div align="center">
+<img src="https://raw.githubusercontent.com/leahevy/neovim.cfg.d/master/assets/neovim-header.png" width="350px"/> 
+</div>
+<br/>
 
 This config is roughly based on [https://github.com/LunarVim/Neovim-from-scratch](https://github.com/LunarVim/Neovim-from-scratch).
 
