@@ -76,5 +76,3 @@ if [[ ! -d "$(pyenv root)/plugins/pyenv-pyright" ]]; then
 fi
 
 npm install -g neovim
-npm install -g remark
-npm install -g remark-gfm
