@@ -87,6 +87,7 @@ local mappings = {
     "Buffers",
   },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
+  ["d"] = { "<cmd>Goyo<cr>", "Distraction free mode" },
   ["n"] = { "<cmd>Neoformat<cr>", "Format file" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>q!<CR>", "Quit" },

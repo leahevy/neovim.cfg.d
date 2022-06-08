@@ -109,6 +109,9 @@ return packer.startup(function(use)
   -- Minimap
   use "wfxr/minimap.vim"
 
+  -- Distraction free
+  use "junegunn/goyo.vim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
