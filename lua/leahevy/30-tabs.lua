@@ -15,6 +15,6 @@ vim.cmd [[
       set smarttab      " Inserts blanks on a <Tab> key (as per sw, ts and sts).
     endfunction
 
-    au! BufWrite,FileWritePre * call UseSpaces()
-    au! BufWrite,FileWritePre *.md call UseTabs()
+    au! BufNewFile,BufRead * call UseSpaces()
+    au! BufNewFile,BufRead *.md call UseTabs()
 ]]
