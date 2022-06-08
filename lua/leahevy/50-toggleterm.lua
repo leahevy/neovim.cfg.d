@@ -3,9 +3,15 @@ if not status_ok then
 	return
 end
 
+local openkey = [[<c-\>]]
+if keyboard_layout_uk ~= 1 then
+    openkey = [[<c-+>]]
+end
+
+
 toggleterm.setup({
 	size = 20,
-	open_mapping = [[<c-\>]],
+	open_mapping = openkey,
 	hide_numbers = true,
 	shade_filetypes = {},
 	shade_terminals = true,

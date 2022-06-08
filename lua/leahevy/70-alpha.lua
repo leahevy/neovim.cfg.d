@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 local dashboard = require("alpha.themes.dashboard")
+
 dashboard.section.header.val = {
     [[ .__                .__                         ]],
     [[ |  |   ____ _____  |  |__   _______  _____.__. ]],
@@ -12,6 +13,9 @@ dashboard.section.header.val = {
     [[ |____/\___  (____  |___|  /\___  >\_/  / ____| ]],
     [[           \/     \/     \/     \/      \/      ]],
 }
+if disable_alpha_banners == 1 then
+	dashboard.section.header.val = {}
+end
 
 dashboard.section.buttons.val = {
 	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
@@ -31,6 +35,9 @@ local function footer()
 end
 
 dashboard.section.footer.val = footer()
+if disable_alpha_banners == 1 then
+	dashboard.section.footer.val = {}
+end
 
 dashboard.section.footer.opts.hl = "Type"
 dashboard.section.header.opts.hl = "Include"

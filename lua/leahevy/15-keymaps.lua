@@ -50,13 +50,21 @@ keymap("x", "0", "g0", opts)
 keymap("x", "$", "g$", opts)
 
 -- Semicolon
-vim.cmd [[
-    noremap ; :
-    noremap : ;
-]]
+if keyboard_layout_uk == 1 then
+	vim.cmd [[
+	    noremap ; :
+	    noremap : ;
+	]]
+end
+
+-- Paste in insert mode
+keymap("i", "<c-v>", "<ESC>pa", opts)
 
 -- Key Y as yy
 keymap("n", "Y", "yy", opts)
+
+-- Key c-p as paste new line
+keymap("n", "<c-p>", "o<ESC>pk\"_dd", opts)
 
 -- Insert --
 -- Press jk fast to enter
