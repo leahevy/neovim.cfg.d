@@ -34,6 +34,8 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", keymap_opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", keymap_opts)
 keymap("n", "<S-h>", ":bprevious<CR>", keymap_opts)
+keymap("n", "gt", ":bnext<CR>", keymap_opts)
+keymap("n", "gT", ":bprevious<CR>", keymap_opts)
 
 -- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", keymap_opts)
