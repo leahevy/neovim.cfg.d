@@ -50,6 +50,7 @@ brew install golang
 brew install lazygit
 brew install fortune
 brew install bashdb
+brew install code-minimap
 
 pip install --upgrade pip
 pip install pynvim

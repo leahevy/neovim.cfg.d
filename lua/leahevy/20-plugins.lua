@@ -106,6 +106,9 @@ return packer.startup(function(use)
   -- GDB
   use "sakhnik/nvim-gdb"
 
+  -- Minimap
+  use "wfxr/minimap.vim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
