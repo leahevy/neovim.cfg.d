@@ -34,35 +34,22 @@ fi
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     export DEBIAN_FRONTEND=noninteractive
-    sudo apt-get -yq install neovim
-    sudo apt-get -yq install ripgrep
-    sudo apt-get -yq install fd-find
-    sudo apt-get -yq install xsel
-    sudo apt-get -yq install ncdu htop
-    sudo apt-get -yq install tmux
-    sudo apt-get -yq install llvm
-    sudo apt-get -yq install cmake
-    sudo apt-get -yq install lazygit
-    sudo apt-get -yq install fortune
-    # TODO: install dotnet
-    sudo apt-get -yq install golang-go
     sudo apt-get -yq install lldb
-    sudo apt-get -yq install bashdb
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    brew install neovim
-    brew install ripgrep
-    brew install fd
-    brew install ncdu htop
-    brew install tmux
-    brew install llvm
-    brew install cmake
     brew install --cask dotnet-sdk
-    brew install golang
-    brew install lazygit
-    brew install fortune
     lldb --version
-    brew install bashdb
 fi
+brew install neovim
+brew install ripgrep
+brew install fd
+brew install ncdu htop
+brew install tmux
+brew install llvm
+brew install cmake
+brew install golang
+brew install lazygit
+brew install fortune
+brew install bashdb
 
 pip install --upgrade pip
 pip install pynvim
