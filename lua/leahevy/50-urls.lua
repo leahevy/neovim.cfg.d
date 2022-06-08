@@ -1,7 +1,7 @@
 -- Fix gx
 vim.cmd [[
     function! HandleURL()
-        let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;]*')
+        let s:uri = expand('<cfile>')
         echo s:uri
         if s:uri != ""
             silent exec "!open '".s:uri."'"
