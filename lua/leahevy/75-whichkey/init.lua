@@ -191,4 +191,3 @@ which_key.setup(setup)
 which_key.register(mappings, whichkey_opts)
 
 require "leahevy.75-whichkey.python"
-require "leahevy.75-whichkey.rasa"

@@ -22,7 +22,9 @@ endfunction
 
 " When switching buffers, preserve window view.
 if v:version >= 700
+  augroup _buffers
     autocmd BufLeave * call AutoSaveWinView()
     autocmd BufEnter * call AutoRestoreWinView()
+  augroup end
 endif
 ]]

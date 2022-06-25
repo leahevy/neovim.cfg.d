@@ -15,7 +15,12 @@ local mypy_cmd = "mypy --pretty " ..
 
 local flake8_cmd = "flake8 --show-source --max-complexity=13 --max-line-length=79"
 
-vim.cmd('autocmd FileType python lua WhichKeyPython()')
+vim.cmd [[
+augroup _whichkey_python
+  autocmd FileType python lua WhichKeyPython()
+augroup end
+]]
+
 function WhichKeyPython()
     which_key.register({
         m = {

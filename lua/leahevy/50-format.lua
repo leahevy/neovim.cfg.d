@@ -1,1 +1,0 @@
-vim.cmd [[vnoremap <c-f> :Neoformat<cr>]]

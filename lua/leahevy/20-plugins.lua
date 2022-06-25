@@ -107,7 +107,9 @@ return packer.startup(function(use)
   use "sakhnik/nvim-gdb"
 
   -- Minimap
-  use "wfxr/minimap.vim"
+  if disable_minimap == 0 then
+    use "wfxr/minimap.vim"
+  end
 
   -- Distraction free
   use "junegunn/goyo.vim"

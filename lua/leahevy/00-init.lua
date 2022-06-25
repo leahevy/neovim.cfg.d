@@ -10,11 +10,3 @@ function _G.ReloadConfig()
   vim.cmd "source $MYVIMRC"
   vim.cmd "PackerSync"
 end
-
--- TODO: leader key does not work after reloading config
----- vim.cmd [[
-----   augroup user_config
-----     autocmd!
-----     autocmd BufWritePost *-*.lua lua ReloadConfig()
-----   augroup end
----- ]]

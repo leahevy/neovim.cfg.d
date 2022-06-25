@@ -36,6 +36,7 @@ local options = {
   --smarttab = true,
   --autoindent = true,
   cursorline = true,                       -- highlight the current line
+  cursorcolumn = true,                     -- highlight the current column
   number = true,                           -- set numbered lines
   relativenumber = true,                   -- set relative numbered lines
   numberwidth = 4,                         -- set number column width to 2 {default 4}

@@ -1,6 +1,8 @@
 vim.cmd [[
-autocmd ColorScheme * highlight Whitespace ctermfg=grey guifg=grey30
-autocmd ColorScheme * highlight EOL ctermfg=grey guifg=grey30
+augroup _colorscheme
+    autocmd ColorScheme * highlight Whitespace ctermfg=grey guifg=grey30
+    autocmd ColorScheme * highlight EOL ctermfg=grey guifg=grey30
+augroup end
 match Whitespace / /
 match EOL /\n/
 
